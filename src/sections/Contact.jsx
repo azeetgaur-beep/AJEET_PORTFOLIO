@@ -1,18 +1,20 @@
-import React from 'react';
+
 import ContactForm from '../components/ContactForm';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-24 border-t border-muted/20 mb-20">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-        <div>
-          <h2 className="font-display italic text-5xl md:text-6xl text-sage mb-6">Let's build <br />something.</h2>
-          <p className="text-muted font-light mb-8 max-w-sm">
-            Feel free to reach out for collaborations or just a friendly hello.
-          </p>
-          <a href="mailto:hello@example.com" className="text-lg hover:text-dust transition-colors">hello@example.com</a>
-        </div>
-        <div>
+    <section id="contact" className="pt-[120px] pb-[120px] overflow-hidden scroll-mt-[80px]">
+      <div className="max-w-[480px] mx-auto text-center px-6">
+        
+        <h2 className="font-display italic font-bold text-[32px] md:text-[44px] text-paper leading-tight">
+          Let's make something.
+        </h2>
+        
+        <p className="font-body font-light text-sm text-paper/70 mt-3">
+          No brief too small. No idea too strange.
+        </p>
+        
+        <div className="mt-[52px]">
           <ContactForm />
         </div>
       </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 const PineTree = ({ stroke = "#1C1C1E", className, style }) => (
   <svg 
@@ -10,6 +10,7 @@ const PineTree = ({ stroke = "#1C1C1E", className, style }) => (
     strokeLinejoin="round"
     className={className}
     style={style}
+    aria-hidden="true"
     xmlns="http://www.w3.org/2000/svg"
   >
     <path d="M 20 5 L 14 18 C 16 16, 20 15, 20 15 C 20 15, 23 16, 26 19 L 20 10" />

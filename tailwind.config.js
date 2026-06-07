@@ -15,7 +15,7 @@ export default {
         surface: '#F2EFE9'
       },
       fontFamily: {
-        display: ['Playfair Display', 'serif'],
+        display: ['"MADE Saonara"', 'Cinzel', 'Playfair Display', 'serif'],
         body: ['DM Sans', 'sans-serif']
       }
     },

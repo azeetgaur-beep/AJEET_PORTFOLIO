@@ -1,14 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-* {
+@font-face {
+  font-family: 'MADE Saonara';
+  src: local('MADE Saonara'), local('MADESaonara-Regular');
+  font-display: swap;
+}
+
+*, *::before, *::after {
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   margin: 0;
-  background-color: theme('colors.paper');
-  color: theme('colors.ink');
+  background-color: transparent;
+  color: theme('colors.paper');
   font-family: theme('fontFamily.body');
+  overflow-x: hidden;
+}
+
+@keyframes scrollPulse {
+  0%, 100% { opacity: 0.4; }
+  50%       { opacity: 0.1; }
+}
+
+@keyframes floatLight {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.floating-light-bg {
+  background-size: 200% 200%;
+  animation: floatLight 10s ease-in-out infinite;
 }

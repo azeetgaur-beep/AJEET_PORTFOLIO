@@ -129,7 +129,7 @@ const Hero = () => {
   const opacity = useTransform(scrollY, [0, 400], [1, 0]);
 
   useEffect(() => {
-    return scrollY.onChange((latest) => {
+    return scrollY.on("change", (latest) => {
       if (latest > 50 && punchline !== punchlines.scroll) {
         setPunchline(punchlines.scroll);
       } else if (latest <= 50 && punchline === punchlines.scroll) {

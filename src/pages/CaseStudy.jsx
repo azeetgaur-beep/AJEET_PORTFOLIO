@@ -103,9 +103,9 @@ const CaseStudy = () => {
             {project.content ? (
               <ReactMarkdown
                 components={{
-                  h1: (props) => <h1 className="text-4xl mb-6 font-display text-paper" {...cleanProps(props)} />,
-                  h2: (props) => <h2 className="text-3xl mt-12 mb-6 font-display text-paper border-b border-white/10 pb-2" {...cleanProps(props)} />,
-                  h3: (props) => <h3 className="text-2xl mt-8 mb-4 font-display text-paper" {...cleanProps(props)} />,
+                  h1: (props) => <h1 className="text-4xl mb-6 font-display text-paper break-words hyphens-auto" {...cleanProps(props)} />,
+                  h2: (props) => <h2 className="text-3xl mt-12 mb-6 font-display text-paper border-b border-white/10 pb-2 break-words hyphens-auto" {...cleanProps(props)} />,
+                  h3: (props) => <h3 className="text-2xl mt-8 mb-4 font-display text-paper break-words hyphens-auto" {...cleanProps(props)} />,
                   p: (props) => <p className="mb-6 text-[16px] text-paper/90 leading-relaxed drop-shadow-md" {...cleanProps(props)} />,
                   ul: (props) => <ul className="list-disc pl-6 mb-6 space-y-2 text-[16px] text-paper/90 drop-shadow-md" {...cleanProps(props)} />,
                   ol: (props) => <ol className="list-decimal pl-6 mb-6 space-y-2 text-[16px] text-paper/90 drop-shadow-md" {...cleanProps(props)} />,
@@ -155,8 +155,6 @@ const CaseStudy = () => {
                   key={idx}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, margin: "-50px" }}
-                  transition={{ duration: 0.5, delay: (idx % 2) * 0.2 }}
                   viewport={{ once: true, margin: "-50px" }}
                   transition={{ duration: 0.5, delay: (idx % 2) * 0.2 }}
                   className="rounded-xl overflow-hidden border border-white/10 bg-black/40 shadow-2xl group cursor-zoom-in relative"

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Sunflower from '../doodles/Sunflower';
 
 // Generate a stable particle system for snowflakes outside component scope
@@ -57,19 +57,34 @@ const SnowyLogo = () => {
   );
 };
 
-const NavLink = ({ to, label, isActive }) => {
+const NavLink = ({ sectionId, label, isActive }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const showFlower = isHovered || isActive;
 
+  const handleClick = (e) => {
+    e.preventDefault();
+    if (location.pathname === '/') {
+      const el = document.getElementById(sectionId);
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      navigate(`/#${sectionId}`);
+    }
+  };
+
   return (
-    <Link
-      to={to}
+    <a
+      href={`/#${sectionId}`}
+      onClick={handleClick}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onFocus={() => setIsHovered(true)}
       onBlur={() => setIsHovered(false)}
-      className="group relative font-body font-light text-[10px] md:text-xs tracking-widest uppercase text-paper/70 hover:text-paper transition-colors duration-300 focus:outline-none focus-visible:text-paper flex items-center"
+      className="group relative font-body font-light text-[10px] md:text-xs tracking-widest uppercase text-paper/70 hover:text-paper transition-colors duration-300 focus:outline-none focus-visible:text-paper flex items-center cursor-pointer"
       style={{ color: isActive ? '#FAFAF8' : '' }}
     >
       {label}
@@ -89,13 +104,28 @@ const NavLink = ({ to, label, isActive }) => {
       >
         <Sunflower className="w-[14px] md:w-[16px] text-sage opacity-100" stroke="currentColor" />
       </motion.div>
-    </Link>
+    </a>
   );
 };
 
 const Nav = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState("");
+  const location = useLocation();
+
+  useEffect(() => {
+    // If we have a hash in URL on home page mount/navigation, smooth scroll to it
+    if (location.pathname === '/' && location.hash) {
+      const timer = setTimeout(() => {
+        const id = location.hash.replace('#', '');
+        const el = document.getElementById(id);
+        if (el) {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 150);
+      return () => clearTimeout(timer);
+    }
+  }, [location.pathname, location.hash]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -141,9 +171,9 @@ const Nav = () => {
         <SnowyLogo />
       </Link>
       <div className="flex gap-6 md:gap-[48px] mr-[16px] md:mr-0">
-        <NavLink to="/about" label="About" isActive={activeSection === "about"} />
-        <NavLink to="/work" label="Work" isActive={activeSection === "work"} />
-        <NavLink to="/contact" label="Contact" isActive={activeSection === "contact"} />
+        <NavLink sectionId="about" label="About" isActive={activeSection === "about"} />
+        <NavLink sectionId="work" label="Work" isActive={activeSection === "work"} />
+        <NavLink sectionId="contact" label="Contact" isActive={activeSection === "contact"} />
       </div>
     </nav>
   );

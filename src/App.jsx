@@ -1,7 +1,6 @@
 
 import { motion } from 'framer-motion';
-import { BrowserRouter as Router, Routes, Route, useLocation, Link } from 'react-router-dom';
-import { LuArrowLeft } from 'react-icons/lu';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Nav from './components/Nav';
 import Footer from './components/Footer';
 import Home from './pages/Home';

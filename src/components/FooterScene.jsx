@@ -110,7 +110,7 @@ const FooterScene = () => {
         {/* Animated Tagline */}
         <motion.div 
           animate={textControls}
-          className="absolute bottom-[90px] md:bottom-[24px] left-[24px] md:left-[52px]"
+          className="absolute bottom-[70px] md:bottom-[24px] left-[24px] md:left-[52px]"
         >
           <p className="font-body font-light text-[11px] text-paper/60 uppercase tracking-widest drop-shadow-md">
             Made with chai and VS Code.
@@ -120,7 +120,7 @@ const FooterScene = () => {
         {/* Master SVG Stage */}
         <svg 
           viewBox="0 0 1000 100" 
-          className="absolute bottom-[114px] md:bottom-[54px] left-[24px] md:left-[52px] h-[60px] md:h-[80px] w-full max-w-[1000px] overflow-visible drop-shadow-lg text-paper"
+          className="absolute bottom-[94px] md:bottom-[54px] left-[24px] md:left-[52px] h-[60px] md:h-[80px] w-full max-w-[1000px] overflow-visible drop-shadow-lg text-paper"
           preserveAspectRatio="xMinYMax meet"
         >
           <g transform="translate(-10, 0)">

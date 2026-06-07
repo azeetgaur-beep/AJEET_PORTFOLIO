@@ -1,4 +1,5 @@
 
+import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { LuMapPin, LuCalendar, LuGraduationCap, LuBookOpen, LuExternalLink } from 'react-icons/lu';
 
@@ -39,6 +40,7 @@ const educationData = [
 ];
 
 const EducationTimeline = () => {
+  const [logoErrors, setLogoErrors] = useState({});
   return (
     <div className="mt-24 relative max-w-[800px] mx-auto z-10">
       <div className="text-center mb-16">
@@ -75,16 +77,18 @@ const EducationTimeline = () => {
                 <div className="flex flex-col md:flex-row gap-6 items-start relative z-10">
                   {/* Logo using Local Extracted PNGs / SVGs */}
                   <a href={edu.domain} target="_blank" rel="noreferrer" className="w-20 h-20 rounded-2xl bg-white hover:bg-white/90 border border-white/20 flex-shrink-0 flex items-center justify-center overflow-hidden p-2 shadow-[0_0_15px_rgba(255,255,255,0.1)] transition-all duration-500 cursor-pointer group/link">
-                    <img 
-                      src={edu.logoPath} 
-                      alt={`${edu.institution} logo`}
-                      className="max-w-full max-h-full object-contain transition-transform duration-500 group-hover/link:scale-110"
-                      onError={(e) => {
-                        e.target.style.display = 'none';
-                        e.target.nextSibling.style.display = 'block';
-                      }}
-                    />
-                    <Icon size={32} className="text-black/30 hidden transition-colors duration-500 group-hover/link:text-black/60" />
+                    {!logoErrors[edu.id] ? (
+                      <img 
+                        src={edu.logoPath} 
+                        alt={`${edu.institution} logo`}
+                        className="max-w-full max-h-full object-contain transition-transform duration-500 group-hover/link:scale-110"
+                        onError={() => {
+                          setLogoErrors(prev => ({ ...prev, [edu.id]: true }));
+                        }}
+                      />
+                    ) : (
+                      <Icon size={32} className="text-black/30 transition-colors duration-500 group-hover/link:text-black/60" />
+                    )}
                   </a>
 
                   <div className="flex-1">

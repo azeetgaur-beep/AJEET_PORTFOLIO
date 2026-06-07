@@ -5,7 +5,7 @@ import Sunflower from '../doodles/Sunflower';
 
 const ContactForm = ({ onFocusChange }) => {
   const { register, handleSubmit, formState: { errors } } = useForm();
-  const [state, handleSubmitFormspree] = useFormspree('xvznkqrw');
+  const [state, handleSubmitFormspree] = useFormspree(import.meta.env.VITE_FORMSPREE_KEY || 'xvznkqrw');
   
   const { scrollY } = useScroll();
   
@@ -17,14 +17,14 @@ const ContactForm = ({ onFocusChange }) => {
     return `drop-shadow(0px 0px ${blurRadius}px rgba(241, 224, 90, ${opacity}))`;
   });
 
-  const onSubmit = async (data) => {
+  const onSubmit = async (data, e) => {
     // Honeypot check
     if (data.website) {
       return;
     }
     
     // Submit the data directly to Formspree
-    await handleSubmitFormspree(data);
+    await handleSubmitFormspree(e);
   };
 
   if (state.succeeded) {

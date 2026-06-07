@@ -23,7 +23,7 @@ const Footer = () => {
   return (
     <footer 
       onMouseMove={handleMouseMove}
-      className="w-full bg-black/40 backdrop-blur-md relative z-20 mt-auto overflow-hidden pt-[48px] pb-[160px] md:py-[48px] px-[24px] md:px-[52px]"
+      className="w-full bg-black/40 backdrop-blur-md relative z-20 mt-auto overflow-hidden pt-[32px] pb-[130px] md:py-[48px] px-[24px] md:px-[52px]"
     >
       
       {/* Glowing Top Border Effect tracking the mouse */}

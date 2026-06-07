@@ -23,9 +23,9 @@ const Work = () => {
     <section id="work" className="pt-[120px] pb-[80px] scroll-mt-[80px]">
       {/* Section Header */}
       <div className="relative z-10 mb-12">
-        <div className="font-body font-light text-xs tracking-[0.18em] uppercase text-paper/70">
+        <h2 className="font-body font-light text-xs tracking-[0.18em] uppercase text-paper/70">
           Work
-        </div>
+        </h2>
       </div>
 
 
@@ -60,12 +60,14 @@ const Work = () => {
             </Link>
 
             {/* Below Image */}
-            <Link 
-              to={`/case-study/${project.id}`}
-              className="font-display text-[28px] text-paper cursor-pointer hover:text-dust transition-colors inline-block"
-            >
-              {project.title}
-            </Link>
+            <h3 className="inline-block">
+              <Link 
+                to={`/case-study/${project.id}`}
+                className="font-display text-[28px] text-paper cursor-pointer hover:text-dust transition-colors"
+              >
+                {project.title}
+              </Link>
+            </h3>
             
             <div className="font-body font-light text-xs text-paper/70 mt-2 flex flex-wrap items-center gap-x-2 gap-y-1">
               <span>{project.year}</span>

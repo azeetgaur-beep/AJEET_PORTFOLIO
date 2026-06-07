@@ -27,9 +27,9 @@ const Skills = () => {
       <div className="max-w-[680px] relative z-10">
         
         {/* Header */}
-        <div className="font-body font-light text-xs tracking-[0.18em] uppercase text-paper/70 mb-10">
+        <h2 className="font-body font-light text-xs tracking-[0.18em] uppercase text-paper/70 mb-10">
           Skills, Languages & Apps
-        </div>
+        </h2>
 
         {skills.map((skill, index) => {
           const fontSize = fontSizes[index % 3];

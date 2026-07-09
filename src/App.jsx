@@ -11,6 +11,8 @@ const AboutPage = lazy(() => import('./pages/AboutPage'));
 const WorkPage = lazy(() => import('./pages/WorkPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
 const CaseStudy = lazy(() => import('./pages/CaseStudy'));
+const Sitemap = lazy(() => import('./pages/Sitemap'));
+const NotFound = lazy(() => import('./pages/NotFound'));
 
 function App() {
   return (
@@ -31,6 +33,8 @@ function App() {
             <Route path="/work" element={<WorkPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/case-study/:id" element={<CaseStudy />} />
+            <Route path="/sitemap" element={<Sitemap />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
       </motion.main>

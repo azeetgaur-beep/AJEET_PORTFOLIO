@@ -35,6 +35,8 @@ const BackgroundGallery = () => {
         <img 
           src="/mountain-town-dusk-silhouette.jpeg" 
           alt="Mountain Town Silhouette"
+          width="1920"
+          height="1080"
           className="w-full h-full object-cover"
         />
       </motion.div>

@@ -40,3 +40,15 @@ body {
   background-size: 200% 200%;
   animation: floatLight 10s ease-in-out infinite;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-light-bg {
+    animation: none !important;
+  }
+}
+
+@supports not (backdrop-filter: blur(1px)) {
+  .backdrop-blur-md, .backdrop-blur-lg, .backdrop-blur-xl, .backdrop-blur-sm {
+    background-color: rgba(15, 15, 15, 0.95) !important;
+  }
+}

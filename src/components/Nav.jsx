@@ -51,6 +51,8 @@ const SnowyLogo = () => {
       <img 
         src="/logo_aj32.webp" 
         alt="AJ Logo" 
+        width="100"
+        height="32"
         className="h-full w-auto object-contain drop-shadow-lg mix-blend-screen transition-opacity duration-300 group-hover:opacity-80 relative z-10" 
       />
     </div>

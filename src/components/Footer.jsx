@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import FooterScene from './FooterScene';
 import { FaLinkedin, FaInstagram, FaWhatsapp } from 'react-icons/fa';
 import { motion, useMotionValue, useSpring, useMotionTemplate, AnimatePresence } from 'framer-motion';
@@ -85,6 +86,13 @@ const Footer = () => {
               <span className="absolute -bottom-[6px] left-0 w-0 h-[1px] bg-paper transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
+          <Link
+            to="/sitemap"
+            className="flex items-center gap-2 font-body font-light text-xs text-paper/70 hover:text-paper transition-colors duration-300 tracking-widest uppercase relative group"
+          >
+            <span>Sitemap</span>
+            <span className="absolute -bottom-[6px] left-0 w-0 h-[1px] bg-paper transition-all duration-300 group-hover:w-full" />
+          </Link>
         </div>
       </div>
     </footer>

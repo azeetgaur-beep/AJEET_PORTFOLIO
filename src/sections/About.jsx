@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import EducationTimeline from '../components/EducationTimeline';
 
 const About = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -105,6 +106,11 @@ const About = () => {
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* Education Timeline */}
+          <div className="mt-16 pt-12 border-t border-white/10 relative">
+            <EducationTimeline />
           </div>
 
           {/* Photography Section Placeholder */}

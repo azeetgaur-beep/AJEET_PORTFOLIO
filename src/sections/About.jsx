@@ -5,14 +5,14 @@ const About = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const photos = [
-    '/about-assets/nature_clouds.jpg',
-    '/about-assets/nature3.jpg',
-    '/about-assets/nature4.jpg',
-    '/about-assets/nature5.jpg',
-    '/about-assets/nature6.jpg',
+    '/about-assets/nature_clouds.webp',
+    '/about-assets/nature3.webp',
+    '/about-assets/nature4.webp',
+    '/about-assets/nature5.webp',
+    '/about-assets/nature6.webp',
     '/about-assets/dog1.webp',
-    '/about-assets/nature7.jpg',
-    '/about-assets/nature8.jpg'
+    '/about-assets/nature7.webp',
+    '/about-assets/nature8.webp'
   ];
 
   return (
@@ -48,9 +48,9 @@ const About = () => {
               </div>
               <div 
                 className="w-full md:w-[280px] shrink-0 rounded-xl overflow-hidden border border-white/10 relative group shadow-2xl cursor-pointer"
-                onClick={() => setSelectedImage('/about-assets/ajeet1.jpg')}
+                onClick={() => setSelectedImage('/about-assets/ajeet1.webp')}
               >
-                <img src="/about-assets/ajeet1.jpg" alt="Ajeet in the mountains" className="w-full object-cover aspect-[4/5] hover:scale-105 transition-transform duration-700" />
+                <img src="/about-assets/ajeet1.webp" alt="Ajeet in the mountains" loading="lazy" className="w-full object-cover aspect-[4/5] hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
                   <span className="text-white font-body text-xs tracking-widest uppercase bg-black/50 px-4 py-2 rounded-full backdrop-blur-md">View</span>
                 </div>
@@ -70,9 +70,9 @@ const About = () => {
               </div>
               <div 
                 className="w-full md:w-[280px] shrink-0 rounded-xl overflow-hidden border border-white/10 relative group shadow-2xl cursor-pointer"
-                onClick={() => setSelectedImage('/about-assets/ajeet2.jpg')}
+                onClick={() => setSelectedImage('/about-assets/ajeet2.webp')}
               >
-                <img src="/about-assets/ajeet2.jpg" alt="Ajeet in the city" className="w-full object-cover aspect-square hover:scale-105 transition-transform duration-700" />
+                <img src="/about-assets/ajeet2.webp" alt="Ajeet in the city" loading="lazy" className="w-full object-cover aspect-square hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
                   <span className="text-white font-body text-xs tracking-widest uppercase bg-black/50 px-4 py-2 rounded-full backdrop-blur-md">View</span>
                 </div>
@@ -97,9 +97,9 @@ const About = () => {
               </div>
               <div 
                 className="w-full md:w-[280px] shrink-0 rounded-xl overflow-hidden border border-white/10 relative group shadow-2xl cursor-pointer"
-                onClick={() => setSelectedImage('/about-assets/ajeet3.jpg')}
+                onClick={() => setSelectedImage('/about-assets/ajeet3.webp')}
               >
-                <img src="/about-assets/ajeet3.jpg" alt="Ajeet coding" className="w-full object-cover aspect-[4/5] hover:scale-105 transition-transform duration-700" />
+                <img src="/about-assets/ajeet3.webp" alt="Ajeet coding" loading="lazy" className="w-full object-cover aspect-[4/5] hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
                   <span className="text-white font-body text-xs tracking-widest uppercase bg-black/50 px-4 py-2 rounded-full backdrop-blur-md">View</span>
                 </div>

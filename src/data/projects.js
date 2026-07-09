@@ -9,7 +9,7 @@ export const projects = [
     tags: ["Next.js", "React", "TypeScript", "Tailwind", "UI Design"],
     description: "A modern B2B e-commerce platform for industrial sourcing, built with Next.js, featuring a custom neomorphic UI and secure server-side API routes.",
     link: "https://ajrexports-a9myza407-ajrexport.vercel.app/",
-    image: "/ajx_dashboard_mockup.png",
+    image: "/ajx_dashboard_mockup.webp",
     gallery: [
       "/projects/ajr/1.png", "/projects/ajr/2.png", "/projects/ajr/3.png", "/projects/ajr/4.png",
       "/projects/ajr/5.png", "/projects/ajr/6.png", "/projects/ajr/7.png", "/projects/ajr/8.png"

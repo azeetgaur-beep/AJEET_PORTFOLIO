@@ -46,7 +46,7 @@ const Work = () => {
                 <ProjectImageCarousel images={project.gallery} title={project.title} />
               ) : project.image ? (
                 <>
-                  <img src={project.image} alt={project.title} className="w-full h-full object-cover transition-transform duration-700 group-hover/image:scale-105" />
+                  <img src={project.image} alt={project.title} loading="lazy" className="w-full h-full object-cover transition-transform duration-700 group-hover/image:scale-105" />
                   <div className="absolute inset-0 bg-black/60 opacity-0 group-hover/image:opacity-100 transition-opacity duration-500 flex flex-col items-center justify-center z-10 backdrop-blur-[2px]">
                     <div className="transform translate-y-4 group-hover/image:translate-y-0 transition-transform duration-500 ease-out flex items-center gap-3 bg-white/10 border border-white/20 px-6 py-3 rounded-full backdrop-blur-md shadow-2xl">
                       <span className="font-display text-paper uppercase tracking-[0.2em] text-[13px]">View Case Study</span>

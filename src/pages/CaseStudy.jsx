@@ -163,6 +163,7 @@ const CaseStudy = () => {
                   <img 
                     src={imgSrc} 
                     alt={`${project.title} screenshot ${idx + 1}`} 
+                    loading="lazy"
                     className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center pointer-events-none">

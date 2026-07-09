@@ -81,6 +81,7 @@ const EducationTimeline = () => {
                       <img 
                         src={edu.logoPath} 
                         alt={`${edu.institution} logo`}
+                        loading="lazy"
                         className="max-w-full max-h-full object-contain transition-transform duration-500 group-hover/link:scale-110"
                         onError={() => {
                           setLogoErrors(prev => ({ ...prev, [edu.id]: true }));

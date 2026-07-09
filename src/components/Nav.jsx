@@ -130,34 +130,36 @@ const Nav = () => {
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 60);
-
-      // Determine active section based on scroll position
-      const sections = ['about', 'work', 'contact'];
-      let currentSection = "";
-
-      sections.forEach(section => {
-        const el = document.getElementById(section);
-        if (el) {
-          const rect = el.getBoundingClientRect();
-          // If the top of the section is within the top half of the screen
-          if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
-            currentSection = section;
-          }
-        }
-      });
-
-      // Update only if changed to avoid unnecessary re-renders
-      if (currentSection !== activeSection) {
-        setActiveSection(currentSection);
-      }
     };
-
-    // Check initial scroll position
     handleScroll();
-
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [activeSection]);
+  }, []);
+
+  useEffect(() => {
+    const sections = ['about', 'work', 'contact'];
+    
+    const options = {
+      root: null,
+      rootMargin: '-50% 0px -50% 0px',
+      threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    }, options);
+
+    sections.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 px-[24px] py-[12px] md:px-[52px] md:py-[16px] flex justify-between items-center transition-all duration-500 ${isScrolled

@@ -90,6 +90,7 @@ const CaseStudy = () => {
                   href={project.link}
                   target="_blank"
                   rel="noreferrer"
+                  aria-label="Visit Live Site (opens in a new window)"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full font-body font-light text-xs tracking-widest uppercase text-paper transition-all"
                 >
                   Visit Live Site <LuExternalLink size={14} />
@@ -110,7 +111,7 @@ const CaseStudy = () => {
                   ul: (props) => <ul className="list-disc pl-6 mb-6 space-y-2 text-[16px] text-paper/90 drop-shadow-md" {...cleanProps(props)} />,
                   ol: (props) => <ol className="list-decimal pl-6 mb-6 space-y-2 text-[16px] text-paper/90 drop-shadow-md" {...cleanProps(props)} />,
                   li: (props) => <li className="pl-2" {...cleanProps(props)} />,
-                  a: (props) => <a className="text-dust hover:text-paper transition-colors underline underline-offset-4" target="_blank" rel="noreferrer" {...cleanProps(props)} />,
+                  a: (props) => <a className="text-dust hover:text-paper transition-colors underline underline-offset-4" target="_blank" rel="noreferrer" aria-label="External link (opens in a new window)" title="Opens in a new window" {...cleanProps(props)} />,
                   strong: (props) => <strong className="font-medium text-paper" {...cleanProps(props)} />,
                   hr: (props) => <hr className="my-12 border-white/10" {...cleanProps(props)} />,
                   table: (props) => <div className="overflow-x-auto mb-8"><table className="w-full text-left border-collapse" {...cleanProps(props)} /></div>,

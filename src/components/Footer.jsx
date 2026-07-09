@@ -78,6 +78,7 @@ const Footer = () => {
               target={social.href !== '#' ? '_blank' : undefined}
               rel={social.href !== '#' ? 'noopener noreferrer' : undefined}
               onClick={social.name === 'Instagram' ? handleInstagramClick : undefined}
+              aria-label={social.href !== '#' ? `${social.name} (opens in a new window)` : social.name}
               className="flex items-center gap-2 font-body font-light text-xs text-paper/70 hover:text-paper transition-colors duration-300 tracking-widest uppercase relative group"
             >
               <social.icon className="text-sm md:text-base opacity-80 group-hover:opacity-100 transition-opacity drop-shadow-md" />

@@ -17,6 +17,7 @@ const NotFound = lazy(() => import('./pages/NotFound'));
 function App() {
   return (
     <Router>
+      <h1 className="sr-only">Ajeet Gaur - Portfolio</h1>
       <div className="fixed inset-0 -z-50 bg-[#0a0a0a] bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.15),rgba(255,255,255,0))]"></div>
       <FloatingDoodles />
       <Nav />

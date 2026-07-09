@@ -76,7 +76,7 @@ const EducationTimeline = () => {
 
                 <div className="flex flex-col md:flex-row gap-6 items-start relative z-10">
                   {/* Logo using Local Extracted PNGs / SVGs */}
-                  <a href={edu.domain} target="_blank" rel="noreferrer" className="w-20 h-20 rounded-2xl bg-white hover:bg-white/90 border border-white/20 flex-shrink-0 flex items-center justify-center overflow-hidden p-2 shadow-[0_0_15px_rgba(255,255,255,0.1)] transition-all duration-500 cursor-pointer group/link">
+                  <a href={edu.domain} target="_blank" rel="noreferrer" aria-label={`${edu.institution} website (opens in a new window)`} className="w-20 h-20 rounded-2xl bg-white hover:bg-white/90 border border-white/20 flex-shrink-0 flex items-center justify-center overflow-hidden p-2 shadow-[0_0_15px_rgba(255,255,255,0.1)] transition-all duration-500 cursor-pointer group/link">
                     {!logoErrors[edu.id] ? (
                       <img 
                         src={edu.logoPath} 
@@ -101,6 +101,7 @@ const EducationTimeline = () => {
                         href={edu.domain} 
                         target="_blank" 
                         rel="noreferrer" 
+                        aria-label={`${edu.institution} website (opens in a new window)`}
                         className="inline-flex items-center gap-2 px-4 py-2 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full font-body font-light text-[10px] tracking-widest uppercase text-paper/70 hover:text-paper transition-all"
                       >
                         Website <LuExternalLink size={12} />

@@ -7,7 +7,7 @@ export const projects = [
     title: "AJR Smart Technology",
     year: "2026",
     tags: ["Next.js", "React", "TypeScript", "Tailwind", "UI Design"],
-    description: "A premium B2B e-commerce platform for industrial sourcing, featuring a neomorphic UI, high-performance canvas animations, and secure endpoint proxies.",
+    description: "A modern B2B e-commerce platform for industrial sourcing, built with Next.js, featuring a custom neomorphic UI and secure server-side API routes.",
     link: "https://ajrexports-a9myza407-ajrexport.vercel.app/",
     image: "/ajx_dashboard_mockup.png",
     gallery: [

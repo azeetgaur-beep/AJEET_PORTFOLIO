@@ -1,22 +1,22 @@
 
-import { SiReact, SiTypescript, SiFigma, SiHtml5, SiNodedotjs } from 'react-icons/si';
-import { LuLayoutTemplate, LuWandSparkles, LuVideo, LuCamera, LuRocket, LuScissors, LuBookOpen, LuComponent } from 'react-icons/lu';
+import { SiReact, SiTypescript, SiFigma, SiHtml5, SiNodedotjs, SiJavascript, SiCplusplus, SiGit, SiTailwindcss } from 'react-icons/si';
+import { LuLayoutTemplate, LuVideo, LuCamera, LuLightbulb } from 'react-icons/lu';
 
 const Skills = () => {
   const skills = [
     { name: "React", icon: SiReact, color: "#61DAFB" }, 
     { name: "TypeScript", icon: SiTypescript, color: "#3178C6" }, 
-    { name: "Figma", icon: SiFigma, color: "#F24E1E" }, 
-    { name: "UI Design", icon: LuLayoutTemplate, color: "#A8C7FA" }, 
+    { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" }, 
+    { name: "C++", icon: SiCplusplus, color: "#00599C" }, 
+    { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" }, 
     { name: "HTML & CSS", icon: SiHtml5, color: "#E34F26" }, 
     { name: "Node.js", icon: SiNodedotjs, color: "#339933" }, 
-    { name: "Creative Direction", icon: LuWandSparkles, color: "#E8D5C4" },
+    { name: "Git", icon: SiGit, color: "#F05032" }, 
+    { name: "Figma", icon: SiFigma, color: "#F24E1E" }, 
+    { name: "UI Design", icon: LuLayoutTemplate, color: "#A8C7FA" }, 
+    { name: "Problem Solving", icon: LuLightbulb, color: "#E8D5C4" },
     { name: "Motion Design", icon: LuVideo, color: "#D1C7D1" }, 
-    { name: "Photography", icon: LuCamera, color: "#A8B4A5" }, 
-    { name: "Antigravity", icon: LuRocket, color: "#FF9800" }, 
-    { name: "Stitch", icon: LuScissors, color: "#E0A8E0" }, 
-    { name: "Visual Storytelling", icon: LuBookOpen, color: "#A8D1D1" }, 
-    { name: "Frontend Architecture", icon: LuComponent, color: "#C7A8D1" }
+    { name: "Photography", icon: LuCamera, color: "#A8B4A5" }
   ];
 
   const fontSizes = [13, 14, 15];

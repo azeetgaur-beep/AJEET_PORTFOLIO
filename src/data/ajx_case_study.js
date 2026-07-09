@@ -7,7 +7,7 @@ Every great engineering project begins with a clear business imperative. The jou
 
 Nitin had a clear vision: *"You Tell Us, We Will Deliver."* He had successfully established logistical pipelines to ship to factories across India and over 15 countries worldwide, including Saudi Arabia, Qatar, Japan, Bahrain, and Dubai. However, without a centralized, high-performance digital platform, connecting with new international clients and showcasing the full breadth of his inventory remained a manual, friction-heavy process.
 
-I made a firm commitment to Nitin: I would architect and develop a digital presence that would not only mirror the premium nature of his physical operations but would also serve as a scalable engine to unlock new national and international markets. The goal was to build a platform where procurement officers and factory managers from Tokyo to Dubai could seamlessly access his catalog, request quotes, and establish lasting B2B relationships.
+I made a firm commitment to Nitin: I would design and develop a digital presence that would not only mirror the premium nature of his physical operations but would also serve as a scalable engine to unlock new national and international markets. The goal was to build a platform where procurement officers and factory managers from Tokyo to Dubai could seamlessly access his catalog, request quotes, and establish lasting B2B relationships.
 
 ---
 
@@ -29,7 +29,7 @@ To achieve these objectives, the platform required an architecture capable of ex
 | **Core Framework** | Next.js (App Router) | Selected for its Server-Side Rendering (SSR) capabilities, ensuring maximum SEO performance and rapid initial page loads globally. |
 | **User Interface** | React & Tailwind CSS | Utilized for building a highly customized, responsive, and tactile Neomorphic design system. |
 | **Type Safety** | TypeScript | Implemented to enforce strict data structures across the complex product catalog and API boundaries. |
-| **Data Flow & Security** | Next.js API Routes | Engineered a custom server-side proxy to process inquiries securely, protecting internal endpoints from automated spam and crawler abuse. |
+| **Data Flow & Security** | Next.js API Routes | Developed secure server-side API routes to process inquiries, protecting internal endpoints from automated spam and crawler abuse. |
 
 ---
 
@@ -38,18 +38,18 @@ To achieve these objectives, the platform required an architecture capable of ex
 To distinguish AJR from conventional, template-driven industrial websites, I developed a custom Neomorphic (Soft UI) design language. This aesthetic mimics physical depth and tactile surfaces, creating a psychological association with premium, physical hardware.
 
 *   **Tactile Hierarchy:** Components utilize sophisticated shadow layering to appear either extruded from or recessed into the background surface, guiding the user's eye naturally toward interactive elements.
-*   **Corporate Color Theory:** A muted, professional slate baseline is accented by strategic applications of Indigo and Corporate Red, utilized strictly to indicate interactive states and critical data points.
+*   **Professional Color Palette:** A muted, professional slate baseline is accented by strategic applications of Indigo and Corporate Red, utilized to indicate interactive states and critical data points.
 *   **Typography:** The implementation of Plus Jakarta Sans provides high legibility for dense technical specifications while maintaining a sleek, modern corporate identity.
 
 ---
 
 ## Core Engineering Implementations
 
-### 1. Hardware-Accelerated Visuals
-To establish an immediate sense of technological sophistication without compromising load times, the platform utilizes a custom HTML5 Canvas engine. This engine generates geometric representations of mechanical systems and circuitry in real-time. Crucially, the rendering loop is browser-throttled and automatically disables on mobile devices to conserve client CPU and battery resources.
+### 1. Canvas-Based Visual Enhancements
+To establish an immediate sense of technological sophistication, the platform utilizes HTML5 Canvas to generate geometric representations of mechanical systems in the background. The rendering loop is optimized and automatically disables on mobile devices to conserve client CPU and battery resources.
 
 ### 2. Secure B2B Inquiry Pipeline
-Corporate communication security was paramount. Rather than exposing raw form action URLs to the client side, inquiries are routed through a localized Next.js server-side endpoint proxy. This layer validates the payload, checks hidden honeypot fields to silently discard automated bot submissions, and securely forwards legitimate inquiries to the sales team.
+Corporate communication security was paramount. Rather than exposing raw form action URLs to the client side, inquiries are routed through Next.js server-side API routes. This layer validates the payload, checks hidden honeypot fields to silently discard automated bot submissions, and securely forwards legitimate inquiries to the sales team.
 
 ### 3. Parameterized Catalog Navigation
 The product catalog was engineered for rapid procurement workflows. As users navigate from broad categories down to specific components, "Request Quote" actions automatically append parameterized query strings. This system pre-configures the contact form with the exact product family and model the user is interested in, drastically reducing friction and increasing conversion rates.

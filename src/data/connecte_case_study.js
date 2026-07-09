@@ -17,7 +17,7 @@ Contributing "in little or more things" might sound modest, but to me, it was mo
 
 ## The Takeaway
 
-ConnectE will always hold a special place in my portfolio. Not because it showcases my peak architectural skills, but because it represents my *genesis*. It is a testament to the power of mentorship and the importance of seniors who are willing to reach down and pull the next generation of developers up.
+ConnectE will always hold a special place in my portfolio. Not because it showcases complex architecture, but because it represents my *genesis*. It is a testament to the power of mentorship and the importance of seniors who are willing to reach down and pull the next generation of developers up.
 
 Thank you, Sarvesh Bhaiya, for the guidance, the patience, and for giving me the push I needed to start this incredible journey.
 `;

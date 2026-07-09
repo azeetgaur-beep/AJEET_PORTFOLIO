@@ -33,7 +33,7 @@ const About = () => {
           className="relative p-[24px] md:p-[48px] border border-white/10 bg-black/40 backdrop-blur-md rounded-xl"
         >
           <h2 className="font-display italic text-[32px] md:text-[40px] text-paper leading-tight mb-[32px]">
-            The Architecture of a Journey.
+            My Journey So Far.
           </h2>
 
           <div className="font-body font-light text-[14px] md:text-[16px] text-paper/80 leading-relaxed">
@@ -43,7 +43,7 @@ const About = () => {
               <div className="flex-1">
                 <h3 className="font-display text-xl text-paper mb-6 border-b border-white/20 pb-2 inline-block">The Rhythm of the Hills</h3>
                 <p>
-                  My story begins in the clouds. I was born and raised in <strong>Chamba</strong>, a quiet, mist-covered town nestled deep within the towering peaks of Tehri Garhwal. Growing up there didn't just give me a hometown; it gave me a rhythm. When you are raised surrounded by the vast, immovable silence of the Himalayas, you learn the value of patience, of deep focus, and of seeing the beauty in small, organic details. For a long time, the mountains were my entire world.
+                  I grew up in <strong>Chamba</strong>, a quiet town in the Himalayas. The mountains taught me patience and the value of deep focus—traits that seamlessly translated into my love for programming. For a long time, this peaceful environment was my entire world, giving me the space to cultivate a genuine curiosity for how things work.
                 </p>
               </div>
               <div 
@@ -60,12 +60,12 @@ const About = () => {
             {/* Chapter 2 */}
             <div className="flex flex-col md:flex-row-reverse gap-8 mb-16 items-center">
               <div className="flex-1">
-                <h3 className="font-display text-xl text-paper mb-6 border-b border-white/20 pb-2 inline-block">The City and the Awakening</h3>
+                <h3 className="font-display text-xl text-paper mb-6 border-b border-white/20 pb-2 inline-block">Discovering Code</h3>
                 <p className="mb-4">
-                  But the mountains, for all their wisdom, often demand that you leave them to grow. The pursuit of better education and broader horizons eventually pulled me away from the quiet altitudes and down into the bustling city of Dehradun for my schooling. It was a culture shock—a sudden shift from the slow, deliberate pace of the hills to a fast-paced environment that demanded rapid adaptability. Yet, it was within this urban rush that my curiosity found a new anchor: technology. I became fascinated by the digital realm, by the idea that you could build entire worlds using nothing but logic and keystrokes.
+                  Moving to Dehradun for my schooling opened up a new world. The transition from a slow-paced hill town to a bustling city was a culture shock, but it sparked my fascination with technology. The idea that I could build interactive experiences using just logic and keystrokes captivated me.
                 </p>
                 <p>
-                  That curiosity remained just an abstraction until I met <strong>Sarvesh Bhaiya</strong>. Every developer has a genesis—a moment or a mentor who pulls back the curtain on how things are truly built. For me, Sarvesh Bhaiya was that guide. He didn't just teach me syntax; he brought me into the trenches of real-world web development. Working alongside him on <em>ConnectE</em> was my first taste of production-level engineering. I remember the sheer awe of contributing to a platform that living, breathing people were actually using. He taught me how to read complex codebases, how to navigate the inevitable frustrations of debugging, and most importantly, how to take pride in the craft. Under his wing, my raw fascination was refined into an obsession with frontend architecture.
+                  This curiosity turned into a tangible pursuit when I met <strong>Sarvesh Bhaiya</strong>, a mentor who introduced me to real-world web development. Working on <em>ConnectE</em> with him was my first exposure to a production codebase. I learned how to read complex code, debug effectively, and take pride in building things people actually use.
                 </p>
               </div>
               <div 
@@ -82,17 +82,17 @@ const About = () => {
             {/* Chapters 3 & 4 Combined with Photo */}
             <div className="flex flex-col md:flex-row gap-8 mb-12 items-center">
               <div className="flex-1">
-                <h3 className="font-display text-xl text-paper mb-6 border-b border-white/20 pb-2 inline-block">Forging a Digital Philosophy</h3>
+                <h3 className="font-display text-xl text-paper mb-6 border-b border-white/20 pb-2 inline-block">Learning by Building</h3>
                 <p className="mb-8">
-                  As my skills sharpened, so did my vision. I began to realize that the web didn't have to be merely functional—it could be tactile, immersive, and beautiful. I started pouring my energy into crafting high-end digital experiences, merging engineering precision with creative direction. This philosophy culminated in projects like the <em>AJR Smart Technology</em> platform, where I learned to architect systems that don't just work flawlessly under the hood, but feel distinctly premium and intuitive to the touch.
+                  As I dove deeper into frontend engineering, I realized that good software isn't just functional—it should be intuitive and well-crafted. I started focusing on building seamless user interfaces and robust applications. This hands-on approach led to projects like the <em>AJR Smart Technology</em> platform, where I learned how to piece together frontend frameworks, APIs, and responsive design to solve real business problems.
                 </p>
 
-                <h3 className="font-display text-xl text-paper mb-6 border-b border-white/20 pb-2 inline-block">Returning to the Source</h3>
+                <h3 className="font-display text-xl text-paper mb-6 border-b border-white/20 pb-2 inline-block">The Path Forward</h3>
                 <p className="mb-4">
-                  Life, much like good design, often comes full circle. Today, I have returned to the hills. I am currently pursuing my engineering degree at <strong>THDC IHET in B.Puram</strong>. There is a profound poetry in sitting at a desk surrounded by the ancient, silent peaks of my childhood, while writing modern code that powers businesses across the globe. Returning to the mountains has allowed me to balance the intense, high-speed demands of software development with the profound peace of my hometown. 
+                  Today, I'm a 2nd-year student pursuing my B.Tech in Computer Science at <strong>THDC IHET in B.Puram</strong>. I'm actively looking for software engineering and frontend internships where I can contribute to impactful projects, learn from experienced teams, and continue growing as a developer.
                 </p>
                 <p>
-                  I am a developer who believes in the intersection of art and logic. I build with the rigorous precision of an engineer, but always with the quiet soul, the patience, and the aesthetic reverence of someone raised by the mountains.
+                  I build with the precision of an engineer and the curiosity of a student, always striving to write clean, maintainable code.
                 </p>
               </div>
               <div 

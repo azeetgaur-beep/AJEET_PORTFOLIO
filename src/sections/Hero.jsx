@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 
 const punchlines = {
-  default: "Hey, I am Ajeet !! A creator from the Himalayas, blending code and design to build digital experiences that breathe.",
+  default: "Hey, I am Ajeet! A frontend developer & CS student, blending code and design to build intuitive digital experiences.",
   work: "Wander through the digital landscapes I've carved.",
   contact: "Got an idea? Let's conquer the next peak together.",
   scroll: "Step into the valley of my imagination..."
@@ -176,7 +176,7 @@ const Hero = () => {
               margin: 0,
             }}
           >
-            frontend &nbsp;&middot;&nbsp; design &nbsp;&middot;&nbsp; creative
+            frontend &nbsp;&middot;&nbsp; software engineering &nbsp;&middot;&nbsp; problem solving
           </motion.p>
 
           {/* 2. Handle */}
